@@ -1,7 +1,7 @@
 const LIGHTS = {
-    red: "red",
-    yellow: "yellow",
-    green: "green"
+    red: 'red',
+    yellow: 'yellow',
+    green: 'green',
 };
 
 const CLASSES_BY_LIGHT = {
@@ -25,9 +25,9 @@ function switchLight(node) {
 
     currentLight = NEXT_LIGHT_BY_LIGHT[currentLight];
     
-    node.classsList.replace(currentClass, nextClass);
+    node.classList.replace(currentClass, nextClass);
 }
 
 function initLight(node) {
-    node.classsList.add(CLASSES_BY_LIGHT[currentLight]);
+    node.classList.add(CLASSES_BY_LIGHT[currentLight]);
 }
