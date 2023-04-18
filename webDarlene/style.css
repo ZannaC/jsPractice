@@ -63,3 +63,51 @@ nav .menu-items a {
     font-weight: 400;
     font-size: 20px;
 }
+
+.hero-section {
+    background-color: var(--orange-color);
+    height: 100vh;
+}
+
+.hero-section .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: calc(100vh - 72px);
+    padding-top: 72px;
+}
+
+.hero-section h1 {
+    font-weight: 900;
+    font-size: 64px;
+    margin: 0;
+}
+
+.hero-section p {
+    font-weight: 400;   
+    font-size: 20px;
+    line-height: 42px;
+    width: 420px;
+}
+
+.hero-section .btn:hover {
+transform: translateY(-8px);
+
+}
+
+.hero-section .btn {
+    font-size: 20px;
+    border-radius: 8px;
+    background: var(--teal-green-color);
+    padding: 12px 36px;
+    color: var(--light-color);
+    display: inline-block;
+
+}
+
+/* Hidden Items */
+.hero-section .social,
+.bg-shape {
+display: none;
+}
